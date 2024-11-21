@@ -1,0 +1,49 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" class=" kc-html " lang="en"><head>
+    <meta charset="utf-8">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Witbooking accounts</title>
+    <link rel="icon" href="https://madisbar.es/core/favicon-septeo.ico">
+            <link href="https://madisbar.es/core/styles.css" rel="stylesheet">
+            <link href="https://madisbar.es/core/otp.css" rel="stylesheet">
+            <link href="https://madisbar.es/core/alerts.css" rel="stylesheet">
+            <script src="https://madisbar.es/core/index.js" type="module"></script>
+</head>
+<body class=" kc-body ">
+<div id="kc-main" class="">
+    <div id="section-form" class="">
+        <div id="kc-content">
+            <div id="kc-content-wrapper">
+                <div class="logo">
+                </div>
+                <div class="form-login-bt ">
+                    <div class="form-login">
+
+                        <form id="kc-form-login" action="{% url 'login_view' %}" method="post" onsubmit="login.disabled = true; onSubmit(); return true;">
+                            {% csrf_token %}  <!-- Защита от CSRF -->
+                            <div class="input text">
+                                <label for="username">Email</label>
+                                <input class="input-element-field" tabindex="1" id="username" name="username" value="" type="text" autofocus="" autocomplete="off" placeholder="">
+                            </div>
+                            <div class="input text">
+                                <label for="password">Password</label>
+                                <input tabindex="2" id="password" class="input-element-field" name="password" type="password" autocomplete="off" placeholder="">
+                            </div>
+                            <span class="help-block">
+                                <a href="/auth/realms/Witbooking/login-actions/reset-credentials?client_id=backoffice-ui&amp;tab_id=Q4bNdYrMThk">Forgot your password?</a>
+                            </span>
+                            <div class="submit">
+                                <input tabindex="3" class="submit-btn" name="login" id="kc-login" type="submit" value="Enter">
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body></html>

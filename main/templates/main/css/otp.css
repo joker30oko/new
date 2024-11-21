@@ -1,0 +1,71 @@
+.form-login-bt.conf-otp-form {
+    width: 407px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    padding: 50px 40px;
+}
+
+.otp-container, .otp-form {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.otp-container {
+    margin-bottom: 15px;
+}
+
+.otp-form .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.otp-form .input-title {
+    display: flex;
+}
+
+.form-title {
+    color: #656565;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: initial;
+    letter-spacing: -0.21px;
+}
+
+.conf-otp-form .auth-messages {
+    padding-bottom: 0;
+}
+
+.conf-otp-form .alert {
+    margin-bottom: 20px;
+}
+
+.form-login-bt.conf-otp-form .submit-btn,
+.form-login-bt.conf-otp-form #kc-login {
+    display: flex;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    margin: 10px 0 0;
+    text-shadow: none;
+    line-height: normal;
+    padding: 0 10px;
+    box-shadow: none;
+    min-width: 117px;
+}
+
+.third-step {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.unable-to-scan-anchor {
+    margin-bottom: 15px;
+}
